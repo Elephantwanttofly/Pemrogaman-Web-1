@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	height: 600px;
+	align-items: center;
+	font-family: fantasy;
+	color: #0000FF;
+}
+.login{
+	justify-content: center;
+	width: 350px;
+	padding: 40px;
+	background-color: #FFF;
+	border: 2px solid;
+	border-color: #6495ED;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+
+.login .input-group{
+	position: initial;
+	width: 100%;
+	margin-bottom: 25px;	
+}
+
+.login .input-group input{
+	height: 30px;
+	width: 60%;
+	border-color: #696969;
+	box-sizing: border-box;
+	border: 1px solid #555555;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+
+.login .input-group input[type="submit"]{
+	float: right;
+	font-family: fantasy;
+	color: #696969;
+	background-color: #FFF;
+	border: 1px solid;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 25%;
+}
+
+
+/* CSS untuk tampilan pada layar yang lebih kecil dari 800px */
+
+@media only screen and (max-width: 800px) {
+	.form-group {
+		display: block;
+	}
+
+	label {
+		margin-bottom: 5px;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+/* CSS untuk tampilan pada layar yang lebih besar dari 800px */
+
+@media only screen and (min-width: 801px) {
+	.container {
+		padding: 20px;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	label {
+		flex: 1;
+		margin-right: 10px;
+		text-align: right;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		flex: 2;
+	}
+}

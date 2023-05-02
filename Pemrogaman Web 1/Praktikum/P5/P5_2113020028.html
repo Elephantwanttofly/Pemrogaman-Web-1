@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<style>
+			.mainmenubtn {
+				background-color: #FF0000;
+				color: white;
+				border: none;
+				cursor: pointer;
+				padding: 20px;
+				margin-top: 20px;
+			}
+			.dropdown {
+			position: relative;
+			display: inline-block;
+			}
+			.dropdown:hover .dropdown-child {
+			display: block;
+			}
+			.dropdown-child {
+			display: none;
+			background-color: #000000;
+			min-width: 200px;
+			}
+			.dropdown-child a {
+			color: white;
+			padding: 20px;
+			text-decoration: none;
+			display: block;
+			}
+			.dropdown-child a:hover {
+			color: black;
+			background-color: lime;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="dropdown">
+		<button class="mainmenubtn">Menu</button>
+		<div class="dropdown-child">
+			<a href="">Sub menu 1</a>
+			<a href="">Sub menu 2</a>
+			<a href="">Sub menu 3</a>
+			<a href="">Sub menu 4</a>
+	</body>
+</html>
